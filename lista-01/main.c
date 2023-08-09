@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "maior_numero.c"
+#include "sorteio.c"
 
 int main(int argc, char *argv[]) {
 
@@ -15,7 +16,7 @@ int main(int argc, char *argv[]) {
 
     switch (digito) {
         case 1: encontra_maior(); break;
-        case 2: printf("Nao implementado!\n"); break;
+        case 2: sorteio(); break;
         case 3: printf("Nao implementado!\n"); break;
         case 4: printf("Nao implementado!\n"); break;
         case 5: printf("Nao implementado!\n"); break;
