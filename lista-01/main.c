@@ -2,6 +2,7 @@
 #include "maior_numero.c"
 #include "sorteio.c"
 #include "pares_e_impares.c"
+#include "jogo_de_azar.c"
 
 int main(int argc, char *argv[]) {
 
@@ -19,7 +20,7 @@ int main(int argc, char *argv[]) {
         case 1: encontra_maior(); break;
         case 2: sorteio(); break;
         case 3: conta_par_e_impar(); break;
-        case 4: printf("Nao implementado!\n"); break;
+        case 4: jogo_de_azar(); break;
         case 5: printf("Nao implementado!\n"); break;
         case 6: printf("Nao implementado!\n"); break;
         case 7: printf("Nao implementado!\n"); break;
