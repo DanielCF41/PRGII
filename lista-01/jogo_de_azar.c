@@ -10,8 +10,13 @@ void jogo_de_azar(){
 
     srand( (unsigned) time(NULL) );
     numero = (rand() % 100) + 1;
+    printf("Digite um numero (0 a 100):");
+    scanf("%d", &numero_digitado);
 
-    do{
+    while(numero_digitado != numero){
+        printf("Tente outra vez!\n");
+        printf("Digite um numero (0 a 100):");
+        scanf("%d", &numero_digitado);
         repeticao = 0;
 
         repetidos[i] = numero_digitado;
@@ -25,10 +30,7 @@ void jogo_de_azar(){
         if(repeticao > 1){
             printf("Voce ja escolheu %d vezes o numero %d.\n", repeticao, numero_digitado);
         }
-        printf("Tente outra vez!\n");
-        printf("Digite um numero (0 a 100):");
-        scanf("%d", &numero_digitado);
         i++;
-    }while(numero_digitado != numero);
+    }
     printf("Parebens voce acertou!\n");
 }
