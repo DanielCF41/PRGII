@@ -5,6 +5,7 @@
 #include "jogo_de_azar.c"
 #include "vetor.c"
 #include "matriz.c"
+#include "palindromo.c"
 
 int main(int argc, char *argv[]) {
 
@@ -25,7 +26,7 @@ int main(int argc, char *argv[]) {
         case 4: jogo_de_azar(); break;
         case 5: vetor(); break;
         case 6: matriz(); break;
-        case 7: printf("Nao implementado!\n"); break;
+        case 7: palindromo(); break;
         case 8: printf("Nao implementado!\n"); break;
     }
 
