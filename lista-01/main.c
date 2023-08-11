@@ -6,6 +6,7 @@
 #include "vetor.c"
 #include "matriz.c"
 #include "palindromo.c"
+#include "conta_vogal.c"
 
 int main(int argc, char *argv[]) {
 
@@ -27,7 +28,7 @@ int main(int argc, char *argv[]) {
         case 5: vetor(); break;
         case 6: matriz(); break;
         case 7: palindromo(); break;
-        case 8: printf("Nao implementado!\n"); break;
+        case 8: conta_vogal(); break;
     }
 
     return 0;
