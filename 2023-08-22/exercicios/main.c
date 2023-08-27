@@ -1,6 +1,7 @@
 #include <stdio.h>
-#include "funcoes.h"
-
+#include "fat_it.c"
+#include "fat_rec.c"
+#include "sequencia_fibonacci.c"
 
 int main() {
     printf("Hello, World!\n");
