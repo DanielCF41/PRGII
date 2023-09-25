@@ -2,7 +2,7 @@
 #include <libprg/libprg.h>
 
 typedef struct{
-    int a, elemento, temp;
+    int a, elemento, temp, deq;
 }temp_t;
 
 int main() {
@@ -20,7 +20,9 @@ int main() {
             case 1:
                 printf("Entre com o tamanho da fila:");
                 scanf("%d", &f.fila->tamanho);
-                cria(f.fila, f.fila->tamanho);
+                if(cria(f.fila, f.fila->tamanho) == -1){
+                    printf("Ops! Houve um estouro na memória, tente novamente com um tamanho menor\n");
+                };
                 break;
             case 2:
                 printf("Entre com o elemento que será inserido:");
@@ -40,14 +42,13 @@ int main() {
                     printf("A fila está vazia\n");
                 } else {
                     printf("Elemento removido: %d\n", t.temp);
-                }
-                for(int i = 0; i < f.fila->total_elementos; i++){
-                    printf("%d ", f.fila->vetor[i]);
+                    t.deq++;
                 }
                 printf("\n");
                 break;
             case 0:
                 printf("Encerrando o programa\n");
+                libera(&f);
                 return 0;
             default:
                 printf("Opção inválida\n");
